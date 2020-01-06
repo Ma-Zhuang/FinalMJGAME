@@ -1,5 +1,4 @@
 deploy:
 - type: git
-  # 下方的gh_token会被.travis.yml中sed命令替换
   repo: https://github.com/SOFT356-Genshushu/FinalMJGAME.git
   branch: master
