@@ -11,6 +11,7 @@ branches:
     - hexo
 # S: Build Lifecycle
 # before_script:
+ #  - cd Server
  # - npm install
     
 script:
