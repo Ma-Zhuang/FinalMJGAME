@@ -39,14 +39,14 @@
       "to":99999999,
       "countpath":"data/idcount.txt",
       "path":"data/ids.txt",
-      "create":false
+      "create":true
   },
   "tableIdConfig":{
     "from":100000,
     "to":999999,
     "countpath":"data/tablecounts.txt",
     "path":"data/tableIds.txt",
-    "create":false
+    "create":true
 },
   "safeCode":"srfgshgfsrg51d2354g1df2g1d35g145s2gd1653zs2fg",
   "codes":{
