@@ -1,0 +1,29 @@
+language: node_js
+node_js:
+-12.12.0
+
+cache:
+  directories:
+    - node_modules
+
+branches:
+  only:
+    - hexo
+# S: Build Lifecycle
+# before_script:
+ # - npm install
+    
+script:
+  - cd Server/node Start.js
+  - cd web/node Api.js
+
+after_script:
+#  - cd ./public
+#  - git init
+  - git config user.name "SOFT356-Genshushu"
+  - git config user.email "zhuang.ma@students.plymouth.ac.uk"
+#  - git add .
+#  - git commit -m "Update docs"
+#  - git push --force --quiet "${Travis}@${GH_REF}" master:master
+  - sed -i "s/Travis/${Travis}/g" ./_config.yml
+  - hexo deploy
